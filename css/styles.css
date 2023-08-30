@@ -46,10 +46,11 @@ body {
   --navyblue-modal: #2e2f4266;
 }
 .container {
-  width: 1158px;
+  width: 428px;
   margin: 0 auto;
   padding: 0 15px;
   position: relative;
+  overflow-x: hidden;
 }
 .header-wrap {
   display: flex;
@@ -63,6 +64,7 @@ body {
 }
 .nav {
   margin-left: 76px;
+  display: none;
 }
 .nav-layout {
   display: inline-flex;
@@ -73,15 +75,14 @@ body {
   margin-left: auto;
   display: flex;
   gap: 40px;
+  display: none;
 }
 .main-navy-section-layout {
-  width: 1440px;
-  height: 600px;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
 }
 .main-navy-content {
-  width: 496px;
   text-align: center;
   margin: 0 auto;
 }
@@ -90,17 +91,15 @@ body {
   padding: 16px 32px;
   align-items: flex-start;
   gap: 10px;
-  margin-top: 48px;
+  margin-top: 72px;
 }
 
 .company-deccription-layout {
-  display: inline-flex;
-  justify-content: center;
-  width: 1128px;
+  display: flex;
+  gap: 72px;
+  flex-direction: column;
+  align-items: center;
   flex-shrink: 0;
-}
-.comp-description-feature {
-  width: 264px;
 }
 .comp-description-icons {
   display: flex;
@@ -120,6 +119,7 @@ body {
   margin: 0 auto;
 }
 .team-img-layout {
+  margin-top: 72px;
   text-align: center;
   background-color: white;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -130,6 +130,7 @@ body {
   width: 264px;
   height: 112px;
   flex-shrink: 0;
+  margin-bottom: 72px;
 }
 .footer-icons {
   display: flex;
@@ -138,8 +139,10 @@ body {
   gap: 16px;
 }
 .social-media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 208px;
-  margin-left: 120px;
 }
 .portfolio-buttons-layout {
   display: flex;
@@ -232,6 +235,8 @@ body {
 }
 .no-dots {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   column-gap: 24px;
   list-style: none;
 }
@@ -270,6 +275,7 @@ body {
   color: var(--portfolio-button);
 }
 .main-navy-section {
+  display: flex;
   background-color: var(--navyblue-background-and-heading-color);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -278,14 +284,14 @@ body {
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 188px 0;
+  padding: 112px 0;
 }
 .main-heading {
-  font-size: 56px;
+  font-size: 36px;
   line-height: 1.07;
   color: var(--h1-and-ourteam-images-bacground-color);
   font-weight: 700;
-  letter-spacing: 1.12px;
+  letter-spacing: 0.72px;
 }
 .main-button {
   font-size: 16px;
@@ -296,8 +302,6 @@ body {
   cursor: pointer;
   font-family: "Roboto";
   letter-spacing: 0.64px;
-  position: absolute;
-  transform: translate(-50%, -50%);
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -573,18 +577,21 @@ body {
   padding-bottom: 120px;
 }
 .company-description-heading {
-  font-size: 20px;
+  font-size: 36px;
   line-height: 1.2;
   font-weight: 500;
   letter-spacing: 0.4px;
   margin-bottom: 0;
+  text-align: center;
 }
 .company-description-paragraph {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 150%;
+  font-weight: 500;
   letter-spacing: 0.32px;
   color: var(--paragraph-color);
   margin-top: 8px;
+  width: 396px;
 }
 .wawd-heading {
   font-size: 36px;
@@ -595,6 +602,7 @@ body {
 }
 .wywd-bottom-padding {
   padding-bottom: 120px;
+  display: none;
 }
 .team-heading {
   font-size: 36px;
@@ -619,10 +627,12 @@ body {
   justify-content: center;
   gap: 24px;
   cursor: pointer;
+  flex-wrap: wrap;
+  gap: 72px 16px;
 }
 .icon-Client {
   fill: #8e8f99;
-  width: 168px;
+  width: 190px;
   height: 88px;
   border-radius: 4px;
   border: 1px solid #8e8f99;
@@ -685,6 +695,7 @@ body {
   color: var(--paragraph-color);
 }
 .footer-background {
+  display: flex;
   background-color: var(--navyblue-background-and-heading-color);
   margin: 0 auto;
   padding: 100px 0;
@@ -697,6 +708,8 @@ body {
   color: var(--h1-and-ourteam-images-bacground-color);
 }
 .footer-logo {
+  display: flex;
+  justify-content: center;
   font-size: 18px;
   line-height: 1.17;
   color: var(--h1-and-ourteam-images-bacground-color);
@@ -706,6 +719,9 @@ body {
 }
 .footer-flex {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .footer-paragraph {
   font-size: 16px;
@@ -728,15 +744,15 @@ body {
   display: flex;
   background-color: var(--navyblue-background-and-heading-color);
   color: var(--h1-and-ourteam-images-bacground-color);
-  margin-right: 24px;
-  width: 264px;
+  width: 398px;
   height: 40px;
   border: 1px solid var(--h1-and-ourteam-images-bacground-color);
   border-radius: 4px;
-  padding: 8px 24px;
+  padding: 8px 16px;
   justify-content: center;
   align-items: center;
   gap: 16px;
+  margin-bottom: 16px;
 }
 #email-footer::placeholder {
   color: var(--h1-and-ourteam-images-bacground-color);
@@ -757,8 +773,21 @@ body {
   background-color: var(--portfolio-button);
 }
 .footer-form-layout {
-  margin-left: 80px;
+  display: flex;
+  margin-top: 72px;
 }
 .form-wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* ----------------MEDIA QUERIES------------------- */
+
+
+@media only screen and (max-width: 1100px) {
+  .comp-description-icons{
+    display: none;
+  }
 }
