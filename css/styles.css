@@ -46,7 +46,7 @@ body {
   --navyblue-modal: #2e2f4266;
 }
 .container {
-  width: 428px;
+  max-width: 428px;
   margin: 0 auto;
   padding: 0 15px;
   position: relative;
