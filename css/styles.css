@@ -359,6 +359,15 @@ body {
 .input-position {
   position: relative;
 }
+.hamb-icon{
+  max-width: 32px;
+  max-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  stroke: var(--dark);
+  stroke-width: 2px;
+}
 .modal-icon {
   position: absolute;
   top: 50%;
