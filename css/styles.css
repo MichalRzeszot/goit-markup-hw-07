@@ -1011,7 +1011,9 @@ body {
 @media only screen and (min-width: 1200px) {
   .menu-toggle,
   .js-open-menu,
-  .hamb-icon {
+  .hamb-icon,
+  .menu-container,
+  .js-menu-conatiner {
     display: none;
   }
   .container {
