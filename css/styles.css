@@ -55,7 +55,6 @@ body {
 .header-wrap {
   display: flex;
   align-items: center;
-  margin-left: 16px;
   padding: 0;
 }
 .header-layout {
@@ -930,10 +929,18 @@ body {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .customers-icons {
     align-items: unset;
     flex-direction: unset;
     flex-wrap: wrap;
+    width: 480px;
+    margin: 0 auto;
     gap: 72px 16px;
   }
   .header-layout {
@@ -953,6 +960,12 @@ body {
   .js-open-menu,
   .hamb-icon {
     display: none;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .container {
     max-width: 768px;
@@ -977,9 +990,10 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/Dark-bg-tab.jpg);
-  }
-  .main-navy-section {
     padding: 112px 136px;
+  }
+  .main-navy-section-layout {
+    width: 768px;
   }
   .main-heading {
     font-size: 56px;
@@ -1012,6 +1026,8 @@ body {
   }
   .customers-icons {
     align-items: unset;
+    width: 768px;
+    margin: 0 auto;
     flex-direction: unset;
     flex-wrap: wrap;
     gap: 72px 16px;
@@ -1034,6 +1050,9 @@ body {
     margin-right: 24px;
     width: 264px;
   }
+  .footer-background {
+    width: 768px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .menu-toggle,
@@ -1042,6 +1061,12 @@ body {
   .menu-container,
   .js-menu-conatiner {
     display: none;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .container {
     max-width: 1200px;
