@@ -601,6 +601,9 @@ body {
   margin-top: 8px;
   width: 396px;
 }
+.comp-description-feature {
+  margin: 0 auto;
+}
 .wawd-heading {
   font-size: 36px;
   line-height: 1.11;
@@ -958,7 +961,6 @@ body {
     width: 480px;
   }
 }
-
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   .menu-toggle,
   .js-open-menu,
@@ -997,7 +999,7 @@ body {
     padding: 112px 136px;
   }
   .main-navy-section-layout {
-    width: 768px;
+    width: 100%;
   }
   .main-heading {
     font-size: 56px;
