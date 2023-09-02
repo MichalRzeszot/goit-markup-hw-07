@@ -945,6 +945,7 @@ body {
   }
   .header-layout {
     align-items: center;
+    width: 480px;
   }
   .main-navy-section {
     background-image: linear-gradient(
@@ -953,9 +954,12 @@ body {
       ),
       url(../images/Dark-bg-tel.jpg);
   }
+  .footer-background {
+    width: 480px;
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
   .menu-toggle,
   .js-open-menu,
   .hamb-icon {
@@ -1054,7 +1058,7 @@ body {
     width: 768px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1201px) {
   .menu-toggle,
   .js-open-menu,
   .hamb-icon,
@@ -1063,10 +1067,8 @@ body {
     display: none;
   }
   body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 1440px;
+    margin: 0 auto;
   }
   .container {
     max-width: 1200px;
