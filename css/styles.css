@@ -33,6 +33,9 @@ a {
 body {
   font-family: "Roboto", sans-serif;
 }
+main {
+  width: 100%;
+}
 :root {
   --cloud-background-color: #f4f4fd;
   --navyblue-background-and-heading-color: #2e2f42;
@@ -284,6 +287,7 @@ body {
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1440px;
   padding: 112px 0;
 }
 .main-heading {
@@ -922,15 +926,7 @@ body {
   .container {
     overflow-x: hidden;
   }
-  .main-navy-section {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/Dark-bg-tel.jpg);
-  }
 }
-
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   body {
     display: flex;
@@ -950,15 +946,20 @@ body {
     align-items: center;
     width: 480px;
   }
+  .footer-background {
+    width: 480px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .main-navy-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Dark-bg-tel.jpg);
-  }
-  .footer-background {
-    width: 480px;
+      url(../images/Dark-bg-tab@2x.jpg);
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
@@ -989,13 +990,6 @@ body {
   }
   .tel {
     font-size: 12px;
-  }
-  .main-navy-section {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/Dark-bg-tab.jpg);
   }
   .main-navy-section-layout {
     width: 100%;
